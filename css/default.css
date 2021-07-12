@@ -1,0 +1,48 @@
+:root {
+  --red: rgb(255, 0, 0);
+  --green: rgb(0, 255, 0);
+  --green200: rgb(0, 200, 0);
+  --green150: rgb(0, 150, 0);
+  --green100: rgb(0, 100, 0);
+  --green50: rgb(0, 50, 0);
+  --blue: rgb(0, 0, 255);
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --grey: rgb(100, 100, 100);
+  --grey150: rgb(150, 150, 150);
+  --grey200: rgb(200, 200, 200);
+  --grey220: rgb(220, 220, 220);
+  --grey240: rgb(240, 240, 240);
+}
+::selection {
+  background-color: var(--green100);
+  color: var(--white);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+body {
+  font-size: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--black);
+}
+ul {
+  list-style: none;
+}
+
+a,
+a:link {
+  color: var(--black);
+  font-size: inherit;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+}

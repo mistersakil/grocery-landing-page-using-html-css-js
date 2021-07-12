@@ -1,0 +1,73 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: var(--green);
+  background: linear-gradient(to right, var(--green), var(--green100));
+}
+.topbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--grey240);
+  padding: 2rem 20rem;
+}
+.logo a {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo .icon {
+  color: var(--green200);
+  font-size: 4rem;
+}
+.logo .logoTitle {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+.searchBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.searchBox input[type="search"] {
+  font-size: 2rem;
+  padding: 2rem;
+  border: 0.1rem solid var(--grey200);
+  border-radius: 1rem 0 0 1rem;
+}
+.searchBox label {
+  background: var(--green200);
+  padding: 2rem;
+  border-radius: 0 1rem 1rem 0;
+  color: var(--white);
+  font-size: 2.5rem;
+}
+/* navbar */
+.navbar {
+  background: var(--white);
+  box-shadow: 0 0 0.2rem 0.3rem var(--grey240);
+  padding: 2rem 20rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.96;
+}
+.navbarContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.navItem {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 1.8rem;
+}
