@@ -1,18 +1,36 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../webfonts/Roboto-Regular.ttf);
+}
 :root {
   --red: rgb(255, 0, 0);
+  --red200: rgb(200, 0, 0);
+  --red150: rgb(150, 0, 0);
+  --red100: rgb(100, 0, 0);
+  --red50: rgb(50, 0, 0);
   --green: rgb(0, 255, 0);
   --green200: rgb(0, 200, 0);
   --green150: rgb(0, 150, 0);
   --green100: rgb(0, 100, 0);
   --green50: rgb(0, 50, 0);
   --blue: rgb(0, 0, 255);
+  --blue200: rgb(0, 0, 200);
+  --blue150: rgb(0, 0, 150);
+  --blue100: rgb(0, 0, 100);
+  --blue50: rgb(0, 0, 50);
   --black: rgb(0, 0, 0);
-  --white: rgb(255, 255, 255);
+  --black10: rgb(10, 10, 10);
+  --black20: rgb(20, 20, 20);
+  --black30: rgb(30, 30, 30);
+  --black40: rgb(40, 40, 40);
+  --black50: rgb(50, 50, 50);
+  --black80: rgb(80, 80, 80);
   --grey: rgb(100, 100, 100);
   --grey150: rgb(150, 150, 150);
   --grey200: rgb(200, 200, 200);
   --grey220: rgb(220, 220, 220);
   --grey240: rgb(240, 240, 240);
+  --white: rgb(255, 255, 255);
 }
 ::selection {
   background-color: var(--green100);
@@ -22,6 +40,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: all 0.3s linear;
 }
 html {
   font-size: 10px;
@@ -31,7 +50,7 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
   color: var(--black);
 }
 ul {

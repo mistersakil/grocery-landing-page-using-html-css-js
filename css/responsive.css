@@ -1,0 +1,53 @@
+/* Header Style  */
+
+@media screen and (max-width: 1100px) {
+  .navbar,
+  .topbar {
+    padding: 1rem 5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar,
+  .topbar {
+    padding: 1rem 2rem;
+  }
+  .searchBox input[type="search"] {
+    padding: 1.2rem 1rem;
+    border-radius: 1rem 0 0 1rem;
+  }
+  .searchBox label {
+    padding: 1.45rem;
+    font-size: 2rem;
+  }
+  .navbarContainer {
+    flex: 6;
+  }
+  .navItem {
+    padding-right: 2.2rem;
+    font-size: 1.7rem;
+  }
+  .iconContainer .icon {
+    font-size: 1.8rem;
+    color: var(--black80);
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo .icon {
+    font-size: 130%;
+  }
+  .logo .logoTitle {
+    font-size: 120%;
+  }
+  .searchBox {
+    display: none;
+  }
+  .mobileMenuHandler {
+    display: inline-block;
+  }
+  .navbar {
+    display: none;
+  }
+}
+
+/* End : Header Style  */
