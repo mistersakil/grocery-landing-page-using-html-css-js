@@ -2,6 +2,7 @@
   font-family: Roboto;
   src: url(../webfonts/Roboto-Regular.ttf);
 }
+
 :root {
   --red: rgb(255, 0, 0);
   --red200: rgb(200, 0, 0);
@@ -32,27 +33,50 @@
   --grey240: rgb(240, 240, 240);
   --white: rgb(255, 255, 255);
 }
-::selection {
-  background-color: var(--green100);
-  color: var(--white);
-}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   transition: all 0.3s linear;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 html {
   font-size: 10px;
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
+  scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-width: thin;
 }
 body {
   font-size: 1.6rem;
-  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Roboto, sans-serif;
   color: var(--black);
+  height: 150vh;
+  position: relative;
 }
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--green200);
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--green150);
+  cursor: pointer;
+}
+/* End: Scrollbar  */
+/* Selection  */
+::selection {
+  background-color: var(--green100);
+  color: var(--white);
+}
+/* End: Selection  */
 ul {
   list-style: none;
 }

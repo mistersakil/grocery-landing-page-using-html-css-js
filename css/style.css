@@ -1,20 +1,17 @@
 /** Header Style  **/
+
 .header {
+  height: 7rem;
+  padding: 1rem 18rem 1rem 19rem;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-/* topbar  */
-.topbar {
-  display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background: var(--grey240);
-  padding: 1rem 20rem;
 }
-.logo a {
+.header .logo {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -22,39 +19,50 @@
   justify-content: space-between;
 }
 
-.logo .icon {
+.header .logo .icon {
   color: var(--green200);
   font-size: 4rem;
 }
-.logo .logoTitle {
+.header .logo .logoTitle {
   font-size: 2.2rem;
   margin-left: 1rem;
   font-weight: 600;
   color: var(--black80);
 }
-.searchBox {
+.header .searchForm {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
+  height: 4rem;
 }
-.searchBox input[type="search"],
-.searchBox input[type="search"]:focus {
-  font-size: 2rem;
-  padding: 2rem;
+.header .searchForm .searchBox,
+.header .searchForm .searchBox:focus {
+  padding: 0 0 0 1rem;
   border: 0.1rem solid var(--grey200);
   border-radius: 1rem 0 0 1rem;
   outline: none;
+  height: 100%;
+  font-size: 1.8rem;
 }
-.searchBox input[type="search"]:focus {
+.header .searchForm .searchBox:focus {
   border-color: var(--green150);
 }
-.searchBox label {
+.header .searchForm .searchPointer {
+  height: 100%;
   background: var(--green200);
-  padding: 2rem;
+  padding: 0 2rem;
   border-radius: 0 1rem 1rem 0;
   color: var(--white);
-  font-size: 2.5rem;
+  font-size: 1.8rem;
+  line-height: 4rem;
+  cursor: pointer;
+}
+.header .searchForm:hover .searchPointer {
+  background: var(--green100);
+}
+.header .searchForm:hover .searchPointer .icon {
+  transform: scale(1.2);
 }
 .mobileMenuHandler {
   display: none;
@@ -63,39 +71,97 @@
 .navbar {
   background: var(--white);
   box-shadow: 0 0 0.2rem 0.3rem var(--grey240);
-  padding: 2rem 20rem;
+  padding: 0 18rem 0 16rem;
+  height: 8rem;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  left: auto;
 }
-.navbarContainer {
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.navbar .navbarContainer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  flex: 9;
+  flex: 16;
+  height: 100%;
 }
-.navItem {
-  display: inline-block;
-  padding-right: 4rem;
+
+.navbar .navLink {
+  line-height: 8rem;
   font-size: 1.8rem;
+  padding: 0 2.8rem;
+  text-align: center;
+  display: block;
+  color: var(--green100);
 }
-.iconContainer {
+
+.navbar .navLink:hover {
+  background: var(--green150);
+  color: var(--white);
+}
+
+.navbar .iconContainer {
   flex: 1;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
 }
-.iconContainer .icon {
-  font-size: 2.2rem;
-  color: var(--grey);
+.navbar .iconContainer .iconLink {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  background: var(--green150);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  font-size: 1.8rem;
+  color: var(--white);
 }
-.iconContainer .icon:nth-child(2) {
-  color: var(--black50);
+.navbar .iconContainer .iconLink:hover {
+  background: var(--green150);
+  transform: scale(1.2);
+  background: var(--green200);
+  color: var(--grey220);
 }
-.iconContainer .icon:nth-child(3) {
-  color: var(--black);
-}
+
 /** End: Header Style  **/
+
+/* Mobile Menu */
+.mobileMenu {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 7rem);
+  background: var(--green200);
+  z-index: 0;
+  position: relative;
+  left: -200%;
+  top: 7rem;
+  padding: 2rem;
+  display: none;
+}
+.mobileMenu.active {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+}
+.mobileMenu .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* End: Mobile Menu */
