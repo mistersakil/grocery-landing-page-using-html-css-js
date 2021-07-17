@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Store Using HTML,CSS,JS - Octapia</title>
+    <title>Online Store Landing Page Using HTML,CSS,JS - Octapia</title>
     <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <!-- Styles -->
     <link rel="stylesheet" href="./css/fontawesome.min.css" />
     <link rel="stylesheet" href="./css/default.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -34,7 +35,7 @@
         <i class="fas fa-bars icon"></i>
       </div>
     </section>
-    <section class="navbar">
+    <section class="navbar" id="navbar">
       <nav class="navbarContainer">
         <a class="navLink" href="#home">home</a>
         <a class="navLink" href="#category">category</a>
@@ -44,24 +45,31 @@
         <a class="navLink" href="#login">login</a>
       </nav>
       <div class="iconContainer">
-        <a href="/cart" class="iconLink" title="Shopping Cart">
+        <a href="/#cart" class="iconLink" title="Shopping Cart">
           <i class="fa fas fa-shopping-cart icon"></i>
         </a>
-        <a href="/fevorite" class="iconLink" title="My Favorite">
+        <a href="/#fevorite" class="iconLink" title="My Favorite">
           <i class="fas fa-heart icon"></i>
         </a>
-        <a href="/login" class="iconLink" title="User Login">
+        <a href="/#login" class="iconLink" title="User Login">
           <i class="fas fa-user-circle icon"></i>
         </a>
       </div>
     </section>
-    <section class="mobileMenu">
+    <section id="home" class="home">
       <div class="container">
-        <h2>Mobile Menu</h2>
-        <i class="fas fa-times icon mobileMenuClose"></i>
+        <figure class="image">
+          <img class="img" src="./images/home-img.png" alt="home-img" />
+        </figure>
+        <article class="content">
+          <small class="subTitle">Fresh & Organic</small>
+          <h2 class="title">Your daily needy products</h2>
+          <a href="#" class="btn">Get Started</a>
+        </article>
       </div>
     </section>
 
+    <!-- Scripts  -->
     <script src="./js/main.js"></script>
   </body>
 </html>

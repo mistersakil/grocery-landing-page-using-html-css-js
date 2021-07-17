@@ -1,4 +1,6 @@
-/* Navbar Sticky */
+/* Navbar */
+
+// Sticky
 const navbar = document.querySelector(".navbar");
 window.onscroll = (event) => {
   if (window.scrollY >= 70) {
@@ -7,20 +9,25 @@ window.onscroll = (event) => {
     navbar.classList.remove("sticky");
   }
 };
-/* End: Navbar Sticky */
-/* Mobile menu script */
+// Navbar Toggle
 const mobileMenuHandler = document.querySelector(".mobileMenuHandler");
-const mobileMenu = document.querySelector(".mobileMenu");
-const mobileMenuClose = document.querySelector(".mobileMenuClose");
-mobileMenuHandler.onclick = (event) => {
-  mobileMenu.classList.add("active");
+
+mobileMenuHandler.onclick = function (event) {
+  this.firstElementChild.classList.toggle("fa-times");
+  navbar.classList.toggle("active");
 };
-mobileMenuClose.onclick = (event) => {
-  mobileMenu.classList.remove("active");
-};
+
 window.onresize = (event) => {
-  if (mobileMenu.offsetWidth >= 700) {
-    mobileMenu.classList.remove("active");
+  if (document.body.offsetWidth >= 700) {
+    navbar.classList.remove("active");
+    mobileMenuHandler.firstElementChild.classList.remove("fa-times");
   }
 };
-/* End: Mobile menu script */
+// Navbar close on item Click
+navbar.onclick = function (event) {
+  if (event.target.tagName == "A") {
+    mobileMenuHandler.firstElementChild.classList.remove("fa-times");
+    navbar.classList.remove("active");
+  }
+};
+/* End: Navbar */

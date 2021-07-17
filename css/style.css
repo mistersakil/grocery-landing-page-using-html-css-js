@@ -32,7 +32,7 @@
 .header .searchForm {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   height: 4rem;
 }
@@ -67,6 +67,9 @@
 .mobileMenuHandler {
   display: none;
 }
+.mobileMenuHandler .icon.active {
+  display: none;
+}
 /* navbar */
 .navbar {
   background: var(--white);
@@ -79,12 +82,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  left: auto;
+  position: relative;
 }
+
 .navbar.sticky {
   position: fixed;
   top: 0;
   left: 0;
+  height: 5rem;
 }
 .navbar .navbarContainer {
   display: flex;
@@ -101,6 +106,9 @@
   text-align: center;
   display: block;
   color: var(--green100);
+}
+.navbar.sticky .navLink {
+  line-height: 5rem;
 }
 
 .navbar .navLink:hover {
@@ -136,32 +144,51 @@
 
 /** End: Header Style  **/
 
-/* Mobile Menu */
-.mobileMenu {
-  display: block;
+/* Home Section */
+.home {
   width: 100%;
-  height: calc(100vh - 7rem);
-  background: var(--green200);
-  z-index: 0;
-  position: relative;
-  left: -200%;
-  top: 7rem;
-  padding: 2rem;
-  display: none;
+  padding: 8rem 14rem 3rem 14rem;
 }
-.mobileMenu.active {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: block;
-}
-.mobileMenu .container {
+.home .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.home .container .image {
+  flex: 1 1 40%;
+}
+.home .container .image .img {
+  width: 100%;
+}
+.home .container .content {
+  flex: 1 1 60%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.home .container .content .subTitle {
+  font-size: 3rem;
+  color: var(--grey);
+}
+.home .container .content .title {
+  font-size: 4rem;
+  color: var(--black80);
+  padding: 4rem 0;
+  line-height: 6rem;
+  font-weight: 600;
+}
+.home .container .content .btn {
+  background: var(--green150);
+  color: var(--white);
 }
 
-/* End: Mobile Menu */
+.home .container .content .btn:hover {
+  background: var(--green100);
+  transform: scale(1.3);
+}
+
+/* End: Home Section */

@@ -89,3 +89,18 @@ a:link {
   text-decoration: none;
   cursor: pointer;
 }
+.btn {
+  background: var(--green150);
+  color: var(--white);
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--grey200);
+  color: var(--white);
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
