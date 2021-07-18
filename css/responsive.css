@@ -206,3 +206,36 @@
 }
 
 /* End: Banner Section */
+/*  Category Section */
+@media screen and (max-width: 1200px) {
+  .category {
+    padding: 5rem 2rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .category .container .box {
+    flex-basis: 48%;
+    margin: 0 1% 1% 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .category .sectionTitle {
+    font-weight: 700;
+    font-size: 4rem;
+  }
+  .category .sectionTitle span {
+    text-transform: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+  }
+  .category .container .box {
+    flex-basis: 95%;
+    margin: 0 1% 2rem 0;
+  }
+  .category .container .box .content .subTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+}
+
+/* End: Category Section */

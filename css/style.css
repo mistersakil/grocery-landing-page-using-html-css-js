@@ -206,7 +206,7 @@
 .banner {
   position: relative;
   width: 100%;
-  padding: 5rem 18rem 2rem 18rem;
+  padding: 5rem 18rem 5rem 18rem;
 }
 .banner .container {
   display: flex;
@@ -249,12 +249,12 @@
 }
 .banner .container .box .title {
   color: var(--green150);
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 500;
 }
 .banner .container .box .subTitle {
   color: var(--green100);
-  padding: 2rem 0;
+  padding: 3rem 0;
   font-size: 1.8rem;
   font-weight: 600;
 }
@@ -267,3 +267,94 @@
 }
 
 /* End: Banner Section */
+
+/* Category Section */
+.category {
+  padding: 5rem 17rem 2rem 18rem;
+}
+
+.category .sectionTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 5rem;
+  color: var(--green100);
+}
+.category .sectionTitle span {
+  text-transform: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: var(--green200);
+}
+.category .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+}
+.category .container .box {
+  border: 0.1rem solid var(--grey200);
+  padding: 2rem 2%;
+  flex-basis: 24%;
+  margin: 0 1% 1% 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.category .container .box:hover {
+  transform: scale(1.05);
+}
+.category .container .box .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.category .container .box .content .title {
+  color: var(--green100);
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 5rem;
+}
+.category .container .box .content .subTitle {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--green150);
+}
+.category .container .box .figure {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.category .container .box .figure .img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  padding: 2rem 0;
+}
+.category .container .box .btn {
+  color: var(--white);
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.category .container .box:hover .btn {
+  background: var(--green);
+  color: var(--black30);
+  font-weight: 400;
+}
+
+/* End: Category Section */
