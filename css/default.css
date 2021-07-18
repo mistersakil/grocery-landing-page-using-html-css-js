@@ -2,6 +2,10 @@
   font-family: Roboto;
   src: url(../webfonts/Roboto-Regular.ttf);
 }
+@font-face {
+  font-family: Oswald;
+  src: url(../webfonts/Oswald-Light.ttf);
+}
 
 :root {
   --red: rgb(255, 0, 0);
@@ -13,6 +17,7 @@
   --green200: rgb(0, 200, 0);
   --green150: rgb(0, 150, 0);
   --green100: rgb(0, 100, 0);
+  --green100: rgb(0, 70, 0);
   --green50: rgb(0, 50, 0);
   --blue: rgb(0, 0, 255);
   --blue200: rgb(0, 0, 200);
@@ -41,6 +46,7 @@
   transition: all 0.3s linear;
   text-decoration: none;
   text-transform: capitalize;
+  letter-spacing: 0.2rem;
 }
 html {
   font-size: 10px;
@@ -52,9 +58,9 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: Roboto, sans-serif;
+  font-family: Oswald, Roboto, sans-serif;
   color: var(--black);
-  height: 150vh;
+  min-height: 350vh;
   position: relative;
 }
 /* Scrollbar */
@@ -77,6 +83,7 @@ body {
   color: var(--white);
 }
 /* End: Selection  */
+
 ul {
   list-style: none;
 }
@@ -103,4 +110,5 @@ a:link {
   padding: 1rem 3rem;
   border-radius: 2rem;
   cursor: pointer;
+  transform: scale(1.2);
 }
