@@ -358,3 +358,126 @@
 }
 
 /* End: Category Section */
+
+/* Product Section */
+.product {
+  padding: 5rem 18rem 2rem 18rem;
+}
+.product .sectionTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 5rem;
+  color: var(--green100);
+  margin: 2rem 0 10rem 0;
+}
+.product .sectionTitle span {
+  text-transform: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: var(--green200);
+}
+.category .sectionTitle span {
+  text-transform: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: var(--green200);
+}
+.product .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.product .container .box {
+  border: 0.1rem solid var(--grey200);
+  flex: 1 1 30%;
+  padding: 2%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product .container .box .discount {
+  font-size: 1.6rem;
+  background-color: var(--white);
+  color: var(--green100);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--green100);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.product .container .box .icons {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+.product .container .box:hover .icons {
+  opacity: 1;
+}
+.product .container .box .icons .icon {
+  font-size: 1.6rem;
+  background: var(--green100);
+  margin-bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--white);
+  cursor: pointer;
+}
+.product .container .box .figure {
+  width: 100%;
+  height: 30rem;
+  overflow: hidden;
+}
+.product .container .box .figure .img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.product .container .box:hover .figure .img {
+  transform: scale(1.06);
+}
+.product .container .box .title {
+  font-size: 2.6rem;
+  color: var(--green100);
+  line-height: 5rem;
+}
+
+.product .container .box .rating .fas {
+  color: var(--golden);
+  cursor: pointer;
+}
+.product .container .box .price {
+  color: var(--grey);
+  font-size: 1.8rem;
+  padding: 1rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.product .container .box .price .previous {
+  text-decoration: line-through;
+}
+
+.product .container .box .btn:hover {
+  background: var(--green100);
+  transform: scale(1);
+}
+/* End: Product Section */

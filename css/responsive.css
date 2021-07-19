@@ -239,3 +239,43 @@
 }
 
 /* End: Category Section */
+
+/* Product Section */
+@media screen and (max-width: 1200px) {
+  .product {
+    padding: 5rem 2rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .product .container .box {
+    flex: 1 1 45%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .product .sectionTitle {
+    font-size: 4rem;
+  }
+  .product .container .box {
+    flex: 1 1 90%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .product {
+    padding: 5rem 1rem;
+  }
+  .product .sectionTitle {
+    font-size: 3rem;
+  }
+  .product .container .box {
+    flex: 1 1 90%;
+    padding: 1rem 0;
+  }
+  .product .container .box .figure {
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+    margin-top: 2rem;
+  }
+}
+
+/* End: Product Section */
