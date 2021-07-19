@@ -109,10 +109,17 @@
 /* Home Section */
 @media screen and (max-width: 1200px) {
   .home {
-    width: 100%;
-    padding: 8rem 2rem 3rem 1rem;
+    margin: 0 2rem;
   }
-  .home .container .image {
+
+  .home .container .content .title {
+    font-size: 4rem;
+    color: var(--green100);
+    padding: 4rem 0;
+    line-height: 6rem;
+    font-weight: 600;
+  }
+  .home .container .figure {
     flex: 1 1 50%;
   }
   .home .container .content {
@@ -120,13 +127,17 @@
   }
   .home .container .content .title {
     font-size: 4rem;
-    color: var(--black80);
     padding: 3rem 0;
     line-height: 4rem;
   }
+  .home .container .content .subTitle {
+    color: var(--green150);
+
+    text-shadow: none;
+  }
 }
 @media screen and (max-width: 1000px) {
-  .home .container .image {
+  .home .container .figure {
     flex: 1 1 45%;
   }
   .home .container .content .title {
@@ -134,7 +145,7 @@
   }
 }
 @media screen and (max-width: 800px) {
-  .home .container .image {
+  .home .container .figure {
     flex: 1 1 40%;
   }
   .home .container .content .subTitle {
@@ -155,7 +166,7 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  .home .container .image {
+  .home .container .figure {
     flex: 1 1 40%;
   }
   .home .container .content .subTitle {
@@ -173,7 +184,7 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  .home .container .image {
+  .home .container .figure {
     flex: 1 1 40%;
   }
   .home .container .content .subTitle {
@@ -235,6 +246,12 @@
   .category .container .box .content .subTitle {
     font-size: 1.8rem;
     font-weight: 700;
+  }
+}
+@media screen and (max-width: 300px) {
+  .category .sectionTitle {
+    font-weight: 400;
+    font-size: 3rem;
   }
 }
 

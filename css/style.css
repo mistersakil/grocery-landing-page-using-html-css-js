@@ -151,24 +151,29 @@
 
 /* Home Section */
 .home {
-  width: 100%;
-  padding: 8rem 14rem 3rem 14rem;
+  position: relative;
+  margin: 0 18rem;
+  height: calc(100vh - 150px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .home .container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: nowrap;
-  width: 100%;
+  flex-wrap: wrap;
+  flex-basis: 100%;
 }
-.home .container .image {
+.home .container .figure {
   flex: 1 1 40%;
 }
-.home .container .image .img {
+.home .container .figure .img {
   width: 100%;
 }
-.home .container .image .img:hover {
+.home .container .figure .img:hover {
   transform: scale(1.1);
 }
 .home .container .content {
@@ -177,21 +182,25 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
+  z-index: 9;
 }
 .home .container .content .subTitle {
-  font-size: 3rem;
+  font-size: 4.5rem;
   color: var(--green150);
+  font-weight: 700;
 }
 .home .container .content .title {
-  font-size: 4rem;
+  font-size: 5rem;
   color: var(--green100);
   padding: 4rem 0;
-  line-height: 6rem;
-  font-weight: 600;
+  line-height: 10rem;
+  font-weight: 900;
 }
 .home .container .content .btn {
   background: var(--green150);
   color: var(--white);
+  font-weight: 700;
 }
 
 .home .container .content .btn:hover {
