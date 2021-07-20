@@ -334,3 +334,33 @@
 }
 
 /* End: Deal Of The Day Section */
+
+/*  Contact us */
+
+@media screen and (max-width: 1200px) {
+  .contact {
+    padding: 5rem 2rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contact .form .submit .btn {
+    width: 40%;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 300px) {
+  .contact .form .input {
+    width: 100%;
+  }
+  .contact .form textarea.input {
+    height: 15rem;
+  }
+  .contact .form .submit .btn {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
+/*  End: Contact us */

@@ -500,7 +500,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 120rem;
+  margin-bottom: 5rem;
 }
 
 .deal .container {
@@ -560,3 +560,66 @@
   transform: scale(1.2);
 }
 /* End: Deal Of The Day Section */
+
+/*  Contact us */
+.contact {
+  padding: 5rem 18rem;
+}
+.contact .sectionTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 5rem;
+  color: var(--green100);
+  margin: 2rem 0 10rem 0;
+}
+.contact .sectionTitle span {
+  text-transform: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: var(--green200);
+}
+.contact .form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.contact .form .input {
+  flex: 48%;
+  font-size: 2rem;
+  color: var(--green100);
+  padding: 2rem 1rem;
+  line-height: 2.5rem;
+  border: 0.1rem solid var(--grey150);
+  outline: none;
+  text-transform: initial;
+}
+.contact .form textarea.input {
+  resize: none;
+}
+.contact .form .input::placeholder {
+  color: var(--green100);
+  font-size: 1.6rem;
+  letter-spacing: normal;
+  opacity: 0.7;
+  text-transform: initial;
+}
+.contact .form .submit {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .form .submit .btn {
+  width: 25%;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: Oswald, Roboto, sans-serif;
+}
+.contact .form .submit .btn:hover {
+  background: var(--green100);
+}
+/*  End: Contact us */
