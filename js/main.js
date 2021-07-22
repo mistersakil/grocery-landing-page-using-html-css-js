@@ -2,17 +2,24 @@
 
 // Sticky
 const navbar = document.querySelector(".navbar");
-const gotoTop = document.querySelector(".gotoTop");
-window.onscroll = (event) => {
-  if (window.scrollY >= 70) {
-    navbar.classList.add("sticky");
-    gotoTop.classList.add("active");
-  } else {
-    navbar.classList.remove("sticky");
-    gotoTop.classList.remove("active");
-  }
+window.onscroll = function (event) {
+  scrollEventHandler();
 };
-// Navbar Toggle
+
+// Highlight navbar active nav link
+
+const navLinks = navbar.querySelector(".navbarContainer");
+
+navLinks.onclick = (event) => {
+  Array.from(navLinks.children).forEach((link) => {
+    if (link.classList.contains("active")) {
+      link.classList.remove("active");
+    }
+  });
+  event.target.classList.add("active");
+};
+
+// Navbar Toggle view on bar click
 const mobileMenuHandler = document.querySelector(".mobileMenuHandler");
 
 mobileMenuHandler.onclick = function (event) {
@@ -76,6 +83,10 @@ form.onsubmit = function (event) {
 /* End: Contact us */
 
 /* Goto top on click */
+const gotoTop = document.querySelector(".gotoTop");
+window.onscroll = function (event) {
+  scrollEventHandler();
+};
 let gotoTopBtn = gotoTop.querySelector(".icon");
 gotoTopBtn.onclick = function (event) {
   document.body.scrollTop = 0;
@@ -83,3 +94,15 @@ gotoTopBtn.onclick = function (event) {
 };
 
 /* End: Goto top on click */
+
+/** Scroll event handler **/
+
+const scrollEventHandler = () => {
+  if (window.scrollY >= 70) {
+    gotoTop.classList.add("active");
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+    gotoTop.classList.remove("active");
+  }
+};

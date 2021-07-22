@@ -104,7 +104,8 @@
   height: 100%;
 }
 
-.navbar .navLink {
+.navbar .navLink,
+.navbar .navLink:link {
   line-height: 8rem;
   font-size: 1.8rem;
   padding: 0 2.8rem;
@@ -115,9 +116,12 @@
 .navbar.sticky .navLink {
   line-height: 5rem;
 }
-
-.navbar .navLink:hover {
+.navbar .navLink.active {
   background: var(--green150);
+  color: var(--white);
+}
+.navbar .navLink:hover {
+  background: var(--green200);
   color: var(--white);
 }
 
@@ -147,7 +151,7 @@
   color: var(--grey220);
 }
 
-/** End: Header Style  **/
+/** End: navbar Style  **/
 
 /* Home Section */
 .home {
