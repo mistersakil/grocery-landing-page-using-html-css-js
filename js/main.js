@@ -2,11 +2,14 @@
 
 // Sticky
 const navbar = document.querySelector(".navbar");
+const gotoTop = document.querySelector(".gotoTop");
 window.onscroll = (event) => {
   if (window.scrollY >= 70) {
     navbar.classList.add("sticky");
+    gotoTop.classList.add("active");
   } else {
     navbar.classList.remove("sticky");
+    gotoTop.classList.remove("active");
   }
 };
 // Navbar Toggle
@@ -62,3 +65,21 @@ const countDown = () => {
 setInterval(() => countDown(), 1000);
 
 /* End: Count Down */
+
+/* Contact us */
+let form = document.querySelector(".form");
+form.onsubmit = function (event) {
+  event.preventDefault();
+  alert("Your form is submitted");
+};
+
+/* End: Contact us */
+
+/* Goto top on click */
+let gotoTopBtn = gotoTop.querySelector(".icon");
+gotoTopBtn.onclick = function (event) {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
+
+/* End: Goto top on click */

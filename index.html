@@ -43,8 +43,8 @@
         <a class="navLink" href="#home">home</a>
         <a class="navLink" href="#banner">offer</a>
         <a class="navLink" href="#category">shop</a>
-        <a class="navLink" href="#product">product</a>
         <a class="navLink" href="#deal">deal</a>
+        <a class="navLink" href="#product">product</a>
         <a class="navLink" href="#contact">contact</a>
       </nav>
       <div class="iconContainer">
@@ -151,6 +151,38 @@
     </section>
     <!-- End: Category Section -->
 
+    <!-- Deal Of The Day Section -->
+    <section class="deal" id="deal">
+      <div class="container">
+        <h2 class="title">Deal of the day</h2>
+
+        <p class="dealInfo">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum sed,
+          neque soluta deserunt earum.
+        </p>
+        <div class="boxContainer">
+          <div class="box">
+            <span class="counter" id="days"> 00 </span>
+            <span class="boxTitle">Days</span>
+          </div>
+          <div class="box">
+            <span class="counter" id="hours"> 00 </span>
+            <span class="boxTitle">Hours</span>
+          </div>
+          <div class="box">
+            <span class="counter" id="minutes"> 00 </span>
+            <span class="boxTitle">Minutes</span>
+          </div>
+          <div class="box">
+            <span class="counter" id="seconds"> 00 </span>
+            <span class="boxTitle">Seconds</span>
+          </div>
+        </div>
+        <a href="#" class="btn">Check The Deal</a>
+      </div>
+    </section>
+
+    <!-- End: Deal Of The Day Section -->
     <!--  Product Section -->
 
     <section id="product" class="product">
@@ -192,7 +224,7 @@
           <figure class="figure">
             <img src="./images/product-5.png" alt="product-1" class="img" />
           </figure>
-          <h2 class="title">Organic Grapes</h2>
+          <h2 class="title">Grapes</h2>
           <div class="rating">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -244,7 +276,7 @@
           <figure class="figure">
             <img src="./images/product-7.png" alt="product-1" class="img" />
           </figure>
-          <h2 class="title">Organic Apple</h2>
+          <h2 class="title">Apple</h2>
           <div class="rating">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -270,7 +302,7 @@
           <figure class="figure">
             <img src="./images/product-2.png" alt="product-1" class="img" />
           </figure>
-          <h2 class="title">Organic Tomato</h2>
+          <h2 class="title">Tomato</h2>
           <div class="rating">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -296,7 +328,7 @@
           <figure class="figure">
             <img src="./images/product-9.png" alt="product-1" class="img" />
           </figure>
-          <h2 class="title">Organic Orange</h2>
+          <h2 class="title">Carrot</h2>
           <div class="rating">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -317,44 +349,11 @@
     </section>
     <!-- /.product -->
 
-    <!-- Deal Of The Day Section -->
-    <section class="deal" id="deal">
-      <div class="container">
-        <h2 class="title">Deal of the day</h2>
-
-        <p class="dealInfo">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum sed,
-          neque soluta deserunt earum.
-        </p>
-        <div class="boxContainer">
-          <div class="box">
-            <span class="counter" id="days"> 00 </span>
-            <span class="boxTitle">Days</span>
-          </div>
-          <div class="box">
-            <span class="counter" id="hours"> 00 </span>
-            <span class="boxTitle">Hours</span>
-          </div>
-          <div class="box">
-            <span class="counter" id="minutes"> 00 </span>
-            <span class="boxTitle">Minutes</span>
-          </div>
-          <div class="box">
-            <span class="counter" id="seconds"> 00 </span>
-            <span class="boxTitle">Seconds</span>
-          </div>
-        </div>
-        <a href="#" class="btn">Check The Deal</a>
-      </div>
-    </section>
-
-    <!-- End: Deal Of The Day Section -->
-
     <!-- Contact us -->
 
     <section class="contact" id="contact">
       <h2 class="sectionTitle">Contact <span>Us</span></h2>
-      <form action="#" method="post" class="form">
+      <form method="post" class="form" action="./">
         <input
           type="text"
           id="name"
@@ -391,11 +390,110 @@
         ></textarea>
         <div class="submit">
           <input type="submit" value="Send Message" class="btn" />
+          <input type="reset" value="Reset" class="btn" />
         </div>
       </form>
     </section>
     <!-- End: Contact us -->
 
+    <!-- Footer section -->
+
+    <section class="footer" id="footer">
+      <div class="container">
+        <div class="box">
+          <h3 class="title">
+            <i class="fas fa-shopping-bag icon"></i>
+            Grocery
+          </h3>
+          <div class="boxContent">
+            <p class="info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              explicabo hic laborum.
+            </p>
+            <nav class="links social">
+              <a href="./" class="link" title="Facebook">
+                <i class="icon fab fa-facebook-f"></i>
+              </a>
+              <a href="./" class="link" title="Twitter">
+                <i class="icon fab fa-twitter"></i>
+              </a>
+              <a href="./" class="link" title="Linkedin">
+                <i class="icon fab fa-linkedin-in"></i>
+              </a>
+              <a href="./" class="link" title="Instagram">
+                <i class="icon fab fa-instagram"></i>
+              </a>
+            </nav>
+          </div>
+        </div>
+        <!-- /.box -->
+        <div class="box">
+          <h3 class="title">Latest <span>Products</span></h3>
+          <div class="boxContent">
+            <nav class="links">
+              <a href="./#contact" class="link">Organic Apple</a>
+              <a href="./#product" class="link">Pure Milk</a>
+              <a href="./#deal" class="link">Lemon Juice</a>
+              <a href="./#home" class="link">Fresh Nut</a>
+            </nav>
+          </div>
+        </div>
+        <!-- /.box -->
+        <div class="box">
+          <h3 class="title">Quick <span> Links</span></h3>
+          <div class="boxContent">
+            <nav class="links">
+              <a href="./#contact" class="link">Contact</a>
+              <a href="./#product" class="link">Product</a>
+              <a href="./#deal" class="link">Deal</a>
+              <a href="./#home" class="link">Home</a>
+            </nav>
+          </div>
+        </div>
+        <!-- /.box -->
+
+        <div class="box">
+          <h3 class="title">Download <span> App</span></h3>
+          <div class="boxContent">
+            <nav class="links">
+              <a href="./" class="link">Android</a>
+              <a href="./" class="link">Apple</a>
+              <a href="./" class="link">Microsoft</a>
+              <a href="./" class="link">Others</a>
+            </nav>
+          </div>
+        </div>
+        <!-- /.box -->
+      </div>
+      <!-- /.container -->
+      <div class="copyright">
+        <p class="content">
+          copyright &copy; 2021. all right reserved. created by
+          <a
+            href="https://www.upwork.com/agencies/~011335ddde8074293a"
+            target="_blank"
+            class="brand"
+            >Octapia</a
+          >
+        </p>
+        <p class="supportUs">
+          buy me a coffee
+          <a
+            href="https://www.upwork.com/agencies/~011335ddde8074293a"
+            target="_blank"
+            ><i class="fas fa-mug-hot icon"></i
+          ></a>
+        </p>
+      </div>
+    </section>
+    <!-- /.footer -->
+    <!-- End: Footer section -->
+
+    <!-- Goto Top section -->
+    <section class="gotoTop" id="gotoTop">
+      <i class="fas fa-arrow-up icon" title="Goto Top"></i>
+    </section>
+    <!-- End: Goto Top section -->
     <!-- Scripts  -->
     <script src="./js/main.js"></script>
   </body>
